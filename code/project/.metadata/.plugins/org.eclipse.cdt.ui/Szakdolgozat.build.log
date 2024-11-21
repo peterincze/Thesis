@@ -1,0 +1,17 @@
+21:02:49 **** Incremental Build of configuration Debug for project Szakdolgozat ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L475xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/Components/hts221 -I../Drivers/BSP/Components/lps22hb -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Szakdolgozat.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Peeter\Documents\szakdolgozat\code\project\Szakdolgozat\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Szakdolgozat.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Szakdolgozat.elf
+ 
+arm-none-eabi-size  Szakdolgozat.elf 
+arm-none-eabi-objdump -h -S Szakdolgozat.elf  > "Szakdolgozat.list"
+   text	   data	    bss	    dec	    hex	filename
+  54908	    468	   4084	  59460	   e844	Szakdolgozat.elf
+Finished building: default.size.stdout
+ 
+Finished building: Szakdolgozat.list
+ 
+
+21:02:51 Build Finished. 0 errors, 0 warnings. (took 1s.499ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;LPS22HH_FIFOMode&apos;" deleteContents="false" description="Delete resource &apos;LPS22HH_FIFOMode&apos;" element1="/LPS22HH_FIFOMode" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1730038554419"/>
+</session>
